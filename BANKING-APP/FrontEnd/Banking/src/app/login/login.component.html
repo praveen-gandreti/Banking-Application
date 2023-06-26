@@ -1,0 +1,28 @@
+<div class="x">
+    <div class="y">
+        <mat-card>
+            <mat-card-title><h1><b>Login</b></h1></mat-card-title>
+            <mat-card-content class="z">
+                <form class="example-form" [formGroup]="form">
+                    <mat-form-field class="example-full-width">
+                      <mat-label>USERNAME</mat-label>
+                      <input type="text" matInput formControlName="userName">
+                    </mat-form-field>
+                    <br/>
+                    <mat-form-field>
+                        <mat-label>PASSWORD</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                  </form>   
+                  <button mat-raised-button color="primary" (click)="login()" class="ab">Login</button>
+                  <br>
+                  <a routerLink="forgot" class="l">Forgot password?</a>
+                  <br>
+                  <button class="p" (click)="create()" mat-raised-button>CREATE NEW ACCOUNT</button>            
+            </mat-card-content>
+        </mat-card>
+    </div>      
+</div>

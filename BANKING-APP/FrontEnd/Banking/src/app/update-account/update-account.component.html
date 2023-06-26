@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div *ngIf="showSearch">
+        <div class="z">
+            <mat-card class="y">
+                <div class="x">
+                    <form [formGroup]="form1">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>ACCOUNT NUMBER</mat-label>
+                            <input type="text" matInput formControlName="account">
+                        </mat-form-field>
+                        <button mat-raised-button (click)="getAccount()" class="a">BALANCE</button>
+                    </form>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+    <div *ngIf="!showSearch">
+        <div class="i">
+            <mat-card class="y">
+                <div class="j">
+                    <form [formGroup]="form2">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>ACCOUNT NUMBER</mat-label>
+                            <input type="text" matInput formControlName="account">
+                        </mat-form-field>
+                        <br>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>FISRT NAME</mat-label>
+                            <input type="text" matInput formControlName="firstName">
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width r">
+                            <mat-label>LASTNAME</mat-label>
+                            <input type="text" matInput formControlName="lastName">
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>ADDRESS</mat-label>
+                            <input type="text" matInput formControlName="address">
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width r">
+                            <mat-label>AADHAR</mat-label>
+                            <input type="text" matInput formControlName="aadhar">
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>PHONE</mat-label>
+                            <input type="text" matInput formControlName="phone">
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width r">
+                            <mat-label>PAN</mat-label>
+                            <input type="text" matInput formControlName="pan">
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>EMAIL</mat-label>
+                            <input type="text" matInput formControlName="email">
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width r">
+                            <mat-label>BALANCE</mat-label>
+                            <input type="text" matInput formControlName="balance">
+                        </mat-form-field>
+                        <mat-checkbox formControlName="online" class="check">ONLINE</mat-checkbox>
+                        <br>
+                        <button mat-raised-button (click)="updateAccount()" class="b">UPDATE ACCOUNT</button>
+                    </form>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</body>
+</html>

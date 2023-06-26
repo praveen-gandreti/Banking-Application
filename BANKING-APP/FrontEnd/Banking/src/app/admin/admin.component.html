@@ -1,0 +1,28 @@
+<div class="a">
+    <div class="b">
+        <mat-card class="c">
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                      <th>ID</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Email</th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let i of data">
+                        <td>{{i.id}}</td>
+                        <td>{{i.firstName}}</td>
+                        <td>{{i.lastName}}</td>
+                        <td>{{i.email}}</td>
+                        <td><button mat-raised-button class="btn1" (click)="deleteAccount(i.id)">DELETE</button></td>
+                        <td><button mat-raised-button class="btn2" (click)="createAccount(i.id)">CREATE</button></td>
+                    </tr>
+                  </tbody>
+            </table>
+        </mat-card>
+    </div>
+</div>

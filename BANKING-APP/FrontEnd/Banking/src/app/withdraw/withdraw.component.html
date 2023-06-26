@@ -1,0 +1,19 @@
+<div class="z">
+    <mat-card class="y">
+        <div class="x">
+            <form [formGroup]="form">
+                <mat-form-field class="example-full-width">
+                    <mat-label>ACCOUNT NUMBER</mat-label>
+                    <input type="text" matInput formControlName="account">
+                </mat-form-field>
+                <br>
+                <mat-form-field class="example-full-width">
+                    <mat-label>AMOUNT</mat-label>
+                    <input type="text" matInput formControlName="amount">
+                </mat-form-field>
+                <br>
+                <button mat-raised-button class="a" (click)="withdraw()">WITHDRAW AMOUNT</button>
+            </form>
+        </div>
+    </mat-card>
+</div>

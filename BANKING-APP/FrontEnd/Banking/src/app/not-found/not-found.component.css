@@ -1,0 +1,35 @@
+body
+{
+    background-color: #383838;
+}
+.x
+{
+   padding-top: 10%;
+   padding-left: 37%;
+}
+.a
+{
+    font-size:400%;
+    color: aliceblue;
+}
+.b
+{
+    font-size:250%;
+    color: aliceblue;
+}
+.c
+{
+    color: white;
+    background-color: green;
+    margin-right: 5%;
+}
+.d
+{
+    color: white;
+    background-color: blue;
+}
+.y
+{
+    margin-left: 10%;
+    margin-top: 2%;
+}

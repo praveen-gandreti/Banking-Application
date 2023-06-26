@@ -1,0 +1,41 @@
+<div class="x">
+    <div class="y">
+        <mat-card>
+            <mat-card-title><h1><b>REGISTER</b></h1></mat-card-title>
+            <mat-card-content class="z">
+                <form class="example-form" [formGroup]="form">
+                    <mat-form-field class="example-full-width">
+                      <mat-label>FIRSTNAME</mat-label>
+                      <input type="text" matInput formControlName="firstName">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>LASTNAME</mat-label>
+                        <input type="text" matInput formControlName="lastName">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>ADDRESS</mat-label>
+                        <input type="text" matInput formControlName="address">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>AADHAR NUMBER</mat-label>
+                        <input type="text" matInput formControlName="aadhar">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>PHONE</mat-label>
+                        <input type="text" matInput formControlName="phone">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>PAN CARD</mat-label>
+                        <input type="text" matInput formControlName="pan">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>E-MAIL</mat-label>
+                        <input type="text" matInput formControlName="email">
+                    </mat-form-field>
+                  </form>   
+                  <button mat-raised-button color="primary" (click)="createAccount()">CREATE ACCOUNT</button>
+                  <button mat-raised-button (click)="backToLogin()" class="p">Back To Login</button>           
+            </mat-card-content>
+        </mat-card>
+    </div>      
+</div>

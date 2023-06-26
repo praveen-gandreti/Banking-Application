@@ -1,0 +1,19 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.x
+{
+    margin-left: 2%;
+}
+.y
+{
+    margin-left: 2%;
+}
+.z
+{
+    margin-right: 4%;
+}
+.active{
+    background-color: black;
+    color: white;
+}

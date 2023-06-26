@@ -1,0 +1,23 @@
+.x
+{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 2%;
+}
+.example-full-width
+{
+    width: 60%;
+}
+mat-card-title
+{
+    text-align: center;
+}
+.z
+{
+    margin-top: 2%;
+    text-align: center;
+}
+.p{
+    margin-left: 10%;
+    background-color: burlywood;
+}

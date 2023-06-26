@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+    <a routerLink="balance" mat-raised-button class="x" color="primary" *ngIf="isLogin && !isAdmin">CHECK BALANCE</a>
+    <a routerLink="transfar" mat-raised-button class="y" color="primary" *ngIf="isLogin && isUser">TRANSFER MONEY</a>
+    <a routerLink="diposit" mat-raised-button class="y" color="primary" *ngIf="isLogin && isEmployee">DIPOSIT</a>
+    <a routerLink="withdraw" mat-raised-button class="y" color="primary" *ngIf="isLogin && isEmployee">WITHDRAW</a>
+    <a routerLink="admin" mat-raised-button class="y" color="primary" *ngIf="isLogin && isAdmin">ADMIN SERVICE</a>
+    <a routerLink="update/account" mat-raised-button class="y" color="primary" *ngIf="isLogin && isEmployee">UPDATE ACCOUNT</a>
+    <span class="example-spacer"></span>
+    <a routerLink="login" mat-raised-button class="z" color="primary" *ngIf="!isLogin">LOGIN</a>
+    <a routerLink="registration" mat-raised-button class="z" color="primary" *ngIf="!isLogin">REGISTAR</a>
+    <button mat-raised-button class="z" color="warn" *ngIf="isLogin" (click)="logout()">LOGOUT</button>
+</mat-toolbar>

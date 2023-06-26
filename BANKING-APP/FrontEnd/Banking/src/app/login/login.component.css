@@ -1,0 +1,35 @@
+.x
+{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 8%;
+}
+.example-full-width
+{
+    width: 60%;
+}
+mat-card-title
+{
+    text-align: center;
+}
+.z
+{
+    margin-top: 2%;
+    text-align: center;
+}
+.p{
+    margin-left:0%;
+    background-color: burlywood;
+    width: 58%;
+    margin-top: 2%;
+}
+.ab
+{
+    margin-left:0%;
+    width: 58%;
+    margin-bottom: 2%;
+}
+.mdc-button__ripple
+{
+    background-color: blueviolet;
+}

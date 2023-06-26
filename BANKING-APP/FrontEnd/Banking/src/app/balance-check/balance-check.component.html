@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div *ngIf="!showSearch">
+        <div class="i">
+            <mat-card class="j">
+                <div class="k">
+                    <form [formGroup]="form1">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>FIRST NAME</mat-label>
+                            <input type="text" matInput formControlName="firstName">
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width l">
+                            <mat-label>LAST NAME</mat-label>
+                            <input type="text" matInput formControlName="lastName">
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width l">
+                            <mat-label>BALANCE</mat-label>
+                            <input type="text" matInput formControlName="balance">
+                        </mat-form-field>
+                    </form>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+    <div *ngIf="showSearch">
+        <div class="z">
+            <mat-card class="y">
+                <div class="x">
+                    <form [formGroup]="form2">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>ACCOUNT NUMBER</mat-label>
+                            <input type="text" matInput formControlName="account">
+                        </mat-form-field>
+                        <button mat-raised-button (click)="balance()" class="a">FIND ACCOUNT</button>
+                    </form>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+    
+</body>
+</html>
