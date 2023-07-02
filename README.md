@@ -8,7 +8,8 @@ This Banking Application contains both Front-End and Back-End.
 
 Front-End :
                 Front-End is developed by using "Angular".
-		
+
+  
                 In this application i have created many components -> 
                 RegistrationComponent
 		LoginComponent
