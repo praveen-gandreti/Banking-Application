@@ -8,6 +8,7 @@ This Banking Application contains both Front-End and Back-End.
 
 Front-End :
                 Front-End is developed by using "Angular".
+		
                 In this application i have created many components -> 
                 RegistrationComponent
 		LoginComponent
@@ -25,7 +26,6 @@ Front-End :
     		DeleteAccountComponent
     		ForgotPasswordComponent
     		AdminPageComponent
-
 		We can access different Components based on Role.
    					Role-USER     ->  can access BalanceCheckComponent and TransferComponent.
 					Role-EMPLOYEE -> Can access BalanceCheckComponent, UpdateAccountComponent, DipositComponent, WithdrawComponent.
